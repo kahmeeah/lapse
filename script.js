@@ -97,3 +97,9 @@ aboutClose.addEventListener('click', (event) => {
 // gsaps!!!!!!!!!!!!!!
 
 gsap.registerPlugin(Draggable);
+Draggable.create(aboutModal, {
+    trigger: '#modal-header',
+    bounds: 'body',
+    edgeResistance: 0.65,
+    inertia: true
+});
