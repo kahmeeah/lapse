@@ -30,7 +30,12 @@ body, html{
 }
 
 .you-container{
-    position: relative;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transition:
+    top 2s cubic-bezier(0.25, 1, 0.5, 1) 200ms, 
+    left 2s cubic-bezier(0.25, 1, 0.5, 1) 200ms;
 
 }
 
@@ -39,6 +44,7 @@ body, html{
     width: 100px;
     height: 100px;
     /* border-bottom: 1px dotted yellow; */
+    transform: translate(-50%, -50%);
 }
 
 #you  {
