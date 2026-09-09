@@ -27,6 +27,38 @@ const whydoYourun = document.querySelector('.you-container');
 
 whydoYourun.addEventListener('mouseenter', (event)=>{
 
+    // lingering code 
+    const p5canvas = document.querySelector('canvas')
+    if (p5canvas){
+
+        lingeringSrc = p5canvas.toDataURL('image/png') // take snapshot of curr canvas
+
+        const lingering = document.createElement('img')
+        lingering.src = lingeringSrc 
+        lingering.classList.add('lingeringYou')
+
+        const currentYou = whydoYourun.getBoundingClientRect(); // curr position
+
+        lingering.style.left = `${currentYou.left}px`
+        lingering.style.top = `${currentYou.top}px`
+        lingering.style.width = `${currentYou.width}px`
+        lingering.style.height = `${currentYou.height}px`
+
+        document.body.appendChild(lingering)
+
+
+        const favicon = document.getElementById('favicon')
+        if (favicon){
+            favicon.href = lingeringSrc
+        }
+
+    }
+
+
+
+
+    // run away code below
+
     const yourContainerWidth = whydoYourun.offsetWidth
     const yourContainerHeight = whydoYourun.offsetHeight
 
@@ -38,8 +70,6 @@ whydoYourun.addEventListener('mouseenter', (event)=>{
     whydoYourun.style.top = (Math.floor(Math.random() * (windowHeight -  yourContainerHeight))) + 'px'
 
 })
-
-
 
 const todayIs = document.querySelector('#todayIs')
 

@@ -68,7 +68,7 @@ body, html{
 .you{
     cursor: crosshair;
     width: 100px;
-    height: 100px;
+    height: 200px;
     /* border-bottom: 1px dotted yellow; */
     transform: translate(-50%, -50%);
 }
@@ -113,5 +113,14 @@ body, html{
 
 .you-container:hover .you-hover {
   visibility: visible;
+}
+
+
+.lingeringYou {
+  position: fixed;
+  z-index: -1;
+  pointer-events: none; 
+  filter: contrast(600%) brightness(.8) opacity(.2);
+  /* filter: opacity(1);  */
 }
 
