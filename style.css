@@ -143,9 +143,10 @@ a:hover{
     border-radius: 6px;
     /* padding: 20px; */
     border: 1px solid #ccc;
-    width: 350px;
+    width: 450px;
     height: 200px;
     overflow: hidden;
+    resize: both;
 }
 
 #modal-header{
@@ -175,4 +176,18 @@ a:hover{
 
 #header-title{
     text-decoration: underline dotted 2px;
+}
+
+#adj1, #adj2, #adj3{
+    
+}
+
+input{
+    padding: 5px;
+    border: none;
+    min-width: 10px;
+    width: fit-content;
+    border-bottom: #ccc dotted 2px;
+    color: grey;
+    font-family: 'Courier New', Courier, monospace;
 }
