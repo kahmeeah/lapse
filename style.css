@@ -18,6 +18,32 @@ body, html{
   user-select: none;         /* Standard syntax (Chrome, Firefox, Opera) */
 }
 
+.time-container{
+    position: relative;
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    user-select: none;  
+    /* justify-content: space-between; */
+    
+}
+
+#time, #title{
+    padding: 5px;
+    font-size: 1rem;
+}
+
+#todayIs{
+    /* text-decoration: underline dotted 2px; */
+    cursor: crosshair;
+}
+#title{
+    text-decoration: underline dotted 2px;
+    cursor: pointer;
+}
+
 .main-container{
     position: relative;
     width: 100%;
@@ -54,7 +80,7 @@ body, html{
 .nav{
     position: relative;
     width: 100vw;
-    height: 10vh;
+    height: 5vh;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;

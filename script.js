@@ -38,3 +38,18 @@ whydoYourun.addEventListener('mouseenter', (event)=>{
     whydoYourun.style.top = (Math.floor(Math.random() * (windowHeight -  yourContainerHeight))) + 'px'
 
 })
+
+
+
+const todayIs = document.querySelector('#todayIs')
+
+function howAboutNow(){
+    const today = new Date();
+    const cleanerToday = today.toString().split(' GMT')[0];
+
+    todayIs.innerText = cleanerToday
+}
+
+howAboutNow();
+
+setInterval(howAboutNow, 1000);
