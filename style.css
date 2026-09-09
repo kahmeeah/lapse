@@ -130,3 +130,49 @@ a{
 a:hover{
     all: unset;
 }
+
+
+.about-modal{
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    bottom: 45%;
+    left: 10%;
+    background-color: #fff;
+    color: #000;
+    border-radius: 6px;
+    /* padding: 20px; */
+    border: 1px solid #ccc;
+    width: 350px;
+    height: 200px;
+    overflow: hidden;
+}
+
+#modal-header{
+    background-color: #ccc;
+    /* width: 100%; */
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    cursor: grab;
+    justify-content: space-between;
+    user-select: none;  
+    
+}
+
+#modal-body{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+
+}
+
+#about-close{
+    cursor: pointer;
+}
+
+#header-title{
+    text-decoration: underline dotted 2px;
+}

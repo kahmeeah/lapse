@@ -83,3 +83,17 @@ function howAboutNow(){
 howAboutNow();
 
 setInterval(howAboutNow, 1000);
+
+const aboutLink = document.querySelector('.link-one')
+const aboutModal = document.querySelector('.about-modal')
+const aboutClose = document.querySelector('#about-close')
+aboutLink.addEventListener('click', (event) =>{
+    aboutModal.style.display = 'flex'
+})
+aboutClose.addEventListener('click', (event) => {
+    aboutModal.style.display = 'none'
+})
+
+// gsaps!!!!!!!!!!!!!!
+
+gsap.registerPlugin(Draggable);
