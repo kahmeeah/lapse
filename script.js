@@ -45,9 +45,9 @@ const todayIs = document.querySelector('#todayIs')
 
 function howAboutNow(){
     const today = new Date();
-    const cleanerToday = today.toString().split(' GMT')[0];
+    const aBetterToday = today.toString().split(' GMT')[0];
 
-    todayIs.innerText = cleanerToday
+    todayIs.innerText = aBetterToday
 }
 
 howAboutNow();
