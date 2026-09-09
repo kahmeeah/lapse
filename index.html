@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://cdn.jsdelivr.net/npm/p5@2.2.3/lib/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5.sound@0.3.0/dist/p5.sound.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +10,11 @@
 </head>
 <body>
     <main>
-        <div class="you-container">im .. you? <img class="you" src="you" alt=".">
-        <span class="you-hover">go forth, ye dwadling egomaniac</span>
-        
+        <div class="you-container">
+            <div id="you" class="you"> 
+                <span class="you-hover">go forth, ye dwadling egomaniac</span>
+            </div>
+            <!-- <img class="you" src="you" alt="."> -->
         </div>
 
         <div class="nav">
@@ -20,6 +24,7 @@
         </div>
         
     </main>
+    <script src="sketch.js"></script>
     
 </body>
 </html>
